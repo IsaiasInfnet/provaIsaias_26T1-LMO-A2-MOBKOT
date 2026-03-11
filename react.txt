@@ -1,0 +1,5 @@
+REACTI NAGTIVE - 06/10/2025
+
+    Configuração (node.js, github, vscode);
+
+    

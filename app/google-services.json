@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "485587113490",
+    "project_id": "mercadomobil-fd698",
+    "storage_bucket": "mercadomobil-fd698.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485587113490:android:6a48bf93a323a502ef2acb",
+        "android_client_info": {
+          "package_name": "dev.isaiassantos.whatsappclonetwo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlFwQU_0WFXBYlJQjf4fpanlAeiFn2OO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

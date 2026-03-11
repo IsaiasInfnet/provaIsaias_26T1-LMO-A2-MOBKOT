@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layoutFirst"
+        android:layout_width="397dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/itemCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/descrItemTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="@string/descr"
+                android:textAllCaps="true"
+                android:textColor="@color/navy"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/qtdItemTitle"
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/quant"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/precoItemTitle"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/custo"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/precoVTitle"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/venda"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/homeItemEdit"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/round_icon_button"
+                android:backgroundTint="#1976D2"
+                android:contentDescription="@string/editar"
+                android:scaleType="center"
+                android:src="@android:drawable/ic_menu_edit" />
+
+            <ImageButton
+                android:id="@+id/homeItemDelete"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/round_icon_button"
+                android:backgroundTint="#D32F2F"
+                android:contentDescription="@string/excluir"
+                android:scaleType="center"
+                android:src="@android:drawable/ic_menu_delete" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

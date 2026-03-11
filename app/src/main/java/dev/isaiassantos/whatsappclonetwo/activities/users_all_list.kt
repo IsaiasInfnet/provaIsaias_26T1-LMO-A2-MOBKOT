@@ -49,6 +49,13 @@ class UsersAllListActivity : AppCompatActivity() {
         findViewById<Button>(R.id.homeReturnButton).setOnClickListener {
             finish()
         }
+
+        findViewById<com.google.android.material.floatingactionbutton.FloatingActionButton>(R.id.homeAddItemButton)
+            .setOnClickListener {
+                val intent = Intent(this@UsersAllListActivity, ConfigActivity::class.java)
+                startActivity(intent)
+            }
+
     }
 
     private fun loadUsersFromFirestore() {
@@ -75,4 +82,6 @@ class UsersAllListActivity : AppCompatActivity() {
                 Toast.makeText(this, "Erro ao carregar usuários: ${exception.message}", Toast.LENGTH_LONG).show()
             }
     }
+
+
 }

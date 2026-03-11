@@ -132,12 +132,10 @@ class LoginActivity : AppCompatActivity() {
         passwordInput = findViewById(R.id.editTextPassword)
         passwordLayout = findViewById(R.id.textLayoutPassword)
         checkNight = findViewById(R.id.checkNight)
-  //      checkLight = findViewById(R.id.checkLight)
         checkDefault = findViewById(R.id.checkDefault)
 
         val currentMode = AppCompatDelegate.getDefaultNightMode()
         checkNight.isChecked = currentMode == AppCompatDelegate.MODE_NIGHT_YES
-       // checkLight.isChecked = currentMode == AppCompatDelegate.MODE_NIGHT_NO
         checkDefault.isChecked = currentMode == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM || currentMode == AppCompatDelegate.MODE_NIGHT_UNSPECIFIED
     }
 
@@ -145,25 +143,20 @@ class LoginActivity : AppCompatActivity() {
         checkNight.setOnClickListener {
             updateTheme(AppCompatDelegate.MODE_NIGHT_YES)
         }
-   //     checkLight.setOnClickListener {
-   //         updateTheme(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-   //     }
+
         checkDefault.setOnClickListener {
             updateTheme(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         }
     }
 
     private fun updateTheme(mode: Int) {
-        // Salvar preferência
+
         val prefs = getSharedPreferences("theme_prefs", Context.MODE_PRIVATE)
         prefs.edit().putInt("theme_mode", mode).apply()
 
-        // Atualizar CheckBoxes (comportamento de RadioButton)
         checkNight.isChecked = mode == AppCompatDelegate.MODE_NIGHT_YES
-     //   checkLight.isChecked = mode == AppCompatDelegate.MODE_NIGHT_NO
         checkDefault.isChecked = mode == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
 
-        // Aplicar tema (isso recriará a activity)
         AppCompatDelegate.setDefaultNightMode(mode)
     }
 

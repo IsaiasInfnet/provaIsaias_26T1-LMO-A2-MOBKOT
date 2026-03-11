@@ -45,7 +45,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/homeItemList"
         android:layout_width="391dp"
-        android:layout_height="501dp"
+        android:layout_height="601dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toTopOf="@+id/homeReturnButton"
@@ -75,7 +75,7 @@
         android:contentDescription="@string/novo_item"
         android:src="@android:drawable/ic_input_add"
         app:backgroundTint="#1976D2"
-        app:layout_constraintBottom_toTopOf="@+id/homeReturnButton"
+        app:layout_constraintBottom_toTopOf="@+id/homeTitle"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
